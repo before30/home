@@ -1,0 +1,28 @@
+server:
+  port: 8082
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
+
+---
+
+spring:
+  profiles: development
+server:
+  port: 8080
+
+---
+
+spring:
+  profiles: production
+server:
+  port: 8080
