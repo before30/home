@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: spring-admin-server-service-deployment
+spec:
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: spring-admin-server-service
+    spec:
+      containers:
+      - name: spring-admin-server-service
+        image: cc.before30.home/spring-admin-server:latest
+        ports:
+        - containerPort: 8080

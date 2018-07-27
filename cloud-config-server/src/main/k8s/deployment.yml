@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cloud-config-server-service-deployment
+spec:
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: cloud-cinfig-server-service
+    spec:
+      containers:
+      - name: cloud-config-server-service
+        image: cc.before30.home/cloud-config-server:latest
+        ports:
+        - containerPort: 8080

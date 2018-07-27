@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: reactive-demo-service
+spec:
+  ports:
+    - port: 8080
+      targetPort: 80
+  selector:
+    app: reactive-demo-service
+  type: NodePort
