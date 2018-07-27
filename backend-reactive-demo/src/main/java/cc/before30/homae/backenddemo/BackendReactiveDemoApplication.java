@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class BackendDemoApplication {
+public class BackendReactiveDemoApplication {
 
-    @GetMapping
+    @GetMapping("/hello")
     public String hello() {
-        return "world from backenddemo";
+        return "world from backednReactiveDemo";
     }
+
     public static void main(String[] args) {
-        SpringApplication.run(BackendDemoApplication.class, args);
+        SpringApplication.run(BackendReactiveDemoApplication.class, args);
     }
 }
