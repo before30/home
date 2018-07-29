@@ -19,4 +19,5 @@ dependencies {
     compile('de.codecentric:spring-boot-admin-starter-server')
     compileOnly('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.cloud:spring-cloud-starter-sleuth')
 }

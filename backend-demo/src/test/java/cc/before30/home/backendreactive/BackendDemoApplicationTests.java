@@ -1,4 +1,4 @@
-package cc.before30.homae.backenddemo;
+package cc.before30.home.backendreactive;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BackendReactiveDemoApplicationTests {
+public class BackendDemoApplicationTests {
 
     @Test
     public void contextLoads() {

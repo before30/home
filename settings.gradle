@@ -6,4 +6,5 @@ include 'spring-admin-server'
 include 'eureka-server'
 include 'backend-reactive-demo'
 include 'backend-demo'
-
+include 'apigw-server'
+include 'backend-book-demo'
